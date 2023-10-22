@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_03</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>text_03</h1>
+    <p>Teste de eventos onload e onclick</p>
+    <a href="javascript:fun1()">Fundo Vermelho</a>
+    <form action="">
+        <input type="radio" name="campo" id="" onclick="fun2();"><!--evento clicar-->
+        <input type="radio" name="campo" id="" onclick="fun3();"><!--evento clicar-->
+    </form>
+</body>
+<script>
+    function fun1() {
+        document.bgColor='red';//função para mudar a cor do fundo no html
+    }
+    function fun2() {
+        document.bgColor='green';
+    }
+    function fun3() {
+        document.bgColor='yellow';
+    }
+</script>
+</html>
