@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 16pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+    <script>
+        var nome = prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)//placeholder da variavél nome.
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+</html>
+
+
+    <!-- Testes NodeJS
+    > var n1 = 1545.5
+    undefined
+    > n1
+    1545.5
+    > n1.toFixed(2)
+    '1545.50'
+    > n1.toFixed(2).replace('.',',')
+    '1545,50'
+    > n1.toLocaleString
+    [Function: toLocaleString]
+    > n1.toLocaleString ('pt-BR', {style: 'currency', currency:'BRL'})
+    'R$ 1.545,50'
+    >
+
+
+    document.write - Comando para mostrar o contéudp na tela
+
+    Nota: Para inserir uma variavél dentro de uma string usando o placeholder, devemos colocar
+    a string dentro de crases e usar a função ${}, para declarar a variavel
+    -->
