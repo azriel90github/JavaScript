@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .area {
+        font: normal 18pt arial;
+        background-color: rgb(43, 187, 132);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"-->
+    <div class="area">
+        Interaja...
+    </div>
+    <script>
+        //Variavel Global
+        var area = window.document.getElementsByClassName('area')[0]
+        //Eventos do HTML embutidos no JavaScript
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        //função clicar
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+
+        //função passar mouse
+        function entrar() {
+            area.innerText = 'Entrou'
+        }
+
+        //função para sair
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>

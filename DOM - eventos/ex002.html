@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 14pt arial;
+            background-color: rgb(131, 78, 138);
+            color: rgb(36, 14, 14);
+        }
+        .container {
+            background-color: brown;
+            color: white;
+            margin: auto;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+        }
+
+        .input {
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            margin: 4px;
+        } 
+
+        .botao {
+            display: flex;
+            justify-content: center;
+            background-color:  rgb(131, 78, 138);
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            margin: 20px auto;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soma de Valores</h1>
+        Número 1:
+        <input class="input" type="number" name="txt1" id="txt1"><br>
+        Número 2:
+        <input class="input" type="number" name="txt2" id="txt2"><br>
+        <input class="botao" type="button" value="Somar" onclick="somar()">
+        <div id="resultado">
+            Resultado...
+        </div>
+    </div>
+</body>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('tx1')
+            var tn2 = document.querySelector('input#txt2')
+            var total = document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            total.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+        }
+    </script>
+
+</html>
