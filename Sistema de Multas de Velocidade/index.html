@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+</head>
+<body>
+    <h1>Sistema de Multas de Velocidade</h1>
+    Velocidade do Carro:
+    <input type="number" name="valor" id="valor">Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">
+        <!--Resultado do Calculo-->
+    </div>
+</body>
+    <script>
+        var valor = document.getElementById('valor')
+        var resultado = document.getElementById('resultado')
+        var valor_caixa = Number(valor.value)
+        resultado.innerHTML = `Sua velocidade actual é de <strong>${valor_caixa}km/h</strong>`
+    </script>
+</html>
