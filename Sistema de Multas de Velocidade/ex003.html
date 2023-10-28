@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Multas - DETRAN</title>
+    <title>Região</title>
     <style>
+        /*
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        */
         body {
             background-color: rgb(44, 44, 107);
             color: white;
             font: normal 14pt arial;
         }
         .container {
-            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,8 +38,8 @@
             border: none;
             margin-top: 20px;
         }
-        #resultado {
-            padding-top: 25px;
+        #morada {
+            padding-top: 10px;
         }
         span {
             padding-top: 10px;
@@ -43,27 +48,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sistema de Multas de Velocidade</h1>
-        Velocidade actual:
-        <input class="input" type="number" name="txtvel" id="txtvel"><span>Km/h</span>
-        <input class="botao" type="button" value="Verificar" onclick="calcular()">
-        <div id="resultado">
-            <!--Resultado do Calculo-->
+        <h1>Sistema de Busca de Região</h1>
+        <h2>Onde você mora?</h2>
+        <label for="">Localidade:</label>
+        <input class="input" type="text" name="localidade" id="localidade"><span>Região</span>
+        <input class="botao" type="button" value="Localizar" onclick="local()">
+        <div id="morada">
+            <!--morada-->
         </div>
     </div>
 </body>
     <script>
-        function calcular() {
-            var txtv = document.querySelector('input#txtvel')
-            var resultado = document.querySelector('div#resultado')
-            var vel = Number(txtv.value)
-            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong><br></p>`
-            //condição simples
-            if (vel > 60) {
-                resultado.innerHTML += `<p>Você ultrapassou o limite de velocidade. MULTADO!</p>`
+        function local() {
+
+            var localidade = document.getElementById('localidade');
+            var morada = document.getElementById('morada');
+            var local_inserido = (localidade.value)
+
+            if (localidade == Brasil) {
+                morada.innerHTML = 'Você é Brasileiro!'
+            } else {
+                morada.innerHTML = 'Você é estrangeiro!'
             }
-            resultado.innerHTML += `<p>Diriga sempre usando o cinto de Segurança. Obrigado</p>`
+
         }
-        
     </script>
 </html>

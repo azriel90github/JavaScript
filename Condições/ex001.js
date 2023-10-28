@@ -1,5 +1,5 @@
 //console.log('O console funcionou corretamente!')
-var velocidade = 70
+var velocidade = 60
 //Mostrar na tela a variavel velocidade
 console.log(`A velocidade do carro é de ${velocidade}km/h`)
 
