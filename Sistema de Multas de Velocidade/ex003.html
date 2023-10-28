@@ -17,6 +17,7 @@
             font: normal 14pt arial;
         }
         .container {
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,7 +49,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Sistema de Busca de Região</h1>
+        <h1>Sistema de Busca de Região Brasileiro</h1>
         <h2>Onde você mora?</h2>
         <label for="">Localidade:</label>
         <input class="input" type="text" name="localidade" id="localidade"><span>Região</span>
@@ -63,12 +64,14 @@
 
             var localidade = document.getElementById('localidade');
             var morada = document.getElementById('morada');
-            var local_inserido = (localidade.value)
+            var local = (localidade.value)
+            morada.innerHTML = `Você é ${local}`
 
-            if (localidade == Brasil) {
-                morada.innerHTML = 'Você é Brasileiro!'
+            if (local == 'Brasil') {
+                morada.innerHTML = '<p>Você é Brasileiro!</p>'
             } else {
-                morada.innerHTML = 'Você é estrangeiro!'
+                morada.innerHTML = '<p>Você é estrangeiro!</p>'
+                morada.innerHTML += '<p>Seja bem vindo ao <strong>Brasil</strong></p>'
             }
 
         }
