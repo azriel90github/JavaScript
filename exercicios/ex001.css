@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Open Sans;
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    background-color: rgb(112, 112, 214);
+    font: normal 12pt Open Sans;
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    padding: 18px;
+    border-radius: 30px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.438);
+}
+
+#mensagem {
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+div {
+    padding: 5px;
+    text-align: center;
+}
+
+footer p {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+#foto img {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Open Sans;
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    background-color: #3B80D2;
+    font: normal 13pt Open Sans;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    justify-content: center;
+    background: white;
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.data {
+    margin-top: 15px;
+    padding: 8px;
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    background-color: #19335362;
+}
+
+.botao {
+    background: #3B80D2;
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#resultado {
+    padding-bottom: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
