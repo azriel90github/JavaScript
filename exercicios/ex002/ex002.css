@@ -43,6 +43,7 @@ section {
     display: flex;
     justify-content: center;
     margin: auto;
+    cursor: pointer;
 }
 
 #resultado {
