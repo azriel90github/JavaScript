@@ -9,7 +9,7 @@ while (c <= 5) {
 
 console.log('Vai Começar...')
 
-for (var c =1; c <=3; c++) {
+for (var c =1; c <=5; c++) {
     console.log(c)
 }
 
