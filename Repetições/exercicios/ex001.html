@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="ex001.css">
 </head>
-<body id="corpo" onload="carregar()">
+<body id="corpo">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Let's Tell</h1>
     </header>
     <section>
-        <div id="mensagem">
-            Aqui vai aparecer a mensagem...
+        <div id="dados">
+            <p>Beginning: <input type="number" name="home" id="home_text"></p>
+            <p>End: <input type="number" name="end" id="end_text"></p>
+            <p>Step: <input type="number" name="step" id="step_text"></p>
+            <button onclick="count()">Count</button>
         </div>
-        <div id="foto">
-            <img id="imagem" src="img/ex001/01.jpg" alt="foto-dia">
+        <div id="result">
+            Preparing the count...
         </div>
     </section>
     <footer>

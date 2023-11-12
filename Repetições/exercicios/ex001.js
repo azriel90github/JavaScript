@@ -1,38 +1,21 @@
-//alert('Olá')
 
-function carregar() {
+function count() {
+    let beginnig = document.getElementById('home_text')
+    let end = document.getElementById('end_text')
+    let step = document.getElementById('step_text')
+    let result = document.getElementById('result')
 
-    var fundo = document.querySelector('body#corpo')
-    var mensagem = document.getElementById('mensagem')
-    var foto = document.getElementById('imagem')
-    //var data = new Date()
-    //var hora = data.getHours()
-    
-    var hora = 21
+    if (beginnig.value.length == 0 || end.value.length ==0 || step.value.length ==0) {
+        alert('[ERRO] Digite os dados')
+    } else {
+        result.innerHTML('Contando...')
+        let beginnig = Number(beginnig.value)
+        let end = Number(end.value)
+        let step = Number(step.value)
 
-    mensagem.innerHTML =`<p>Agora são ${hora} horas</p>`
-
-    if ( hora >=0 && hora < 12) {
-        //bom dia
-        foto.src = 'img/ex001/01.jpg'
-
-        fundo.style.background = '#CCBF5E'//cor do fundo
-
-        mensagem.innerHTML += 'Bom dia pra si'
-
-    } else if (hora >= 12 && hora < 18) {
-        //boa tarde
-        foto.src = 'img/ex001/02.jpg'
-
-        fundo.style.background = '#CC6630'//cor do fundo
-
-        mensagem.innerHTML += 'Passe bem a Tarde'
-    }else {
-        //boa noite
-        foto.src = 'img/ex001/03.jpg'
-
-        fundo.style.background = '#514064'//cor do fundo
-
-        mensagem.innerHTML += 'Boa noite e bons Sonhos'
+        for ( let count = beginnig; count <= end; count += step) {
+            result.innerHTML += `${c}`
+        }
     }
+
 }
