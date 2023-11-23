@@ -1,5 +1,5 @@
 //variavel
-var pais = 'França'
+var pais = 'Brasil'
 
 //mostrar na tela a variavel pais
 console.log(`Vivendo em ${pais}`)
