@@ -38,6 +38,10 @@ input {
     border-radius: 8px;
 }
 
+#email {
+    margin-bottom: 20px;
+}
+
 #morada {
     margin-bottom: 20px;
 }
