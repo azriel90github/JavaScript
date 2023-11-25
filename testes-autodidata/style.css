@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body {
+    background: rgb(99, 99, 141);
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.form {
+    width: 300px;
+    margin: auto;
+}
+
+form {
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgb(75, 164, 199);
+    display: grid;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    width: 250px;
+    padding: 9px;
+    border-radius: 8px;
+}
+
+#morada {
+    margin-bottom: 20px;
+}
+
+#enviar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+}
