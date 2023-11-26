@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Detectação de Foco</title>
+    <link rel="stylesheet" href="foco.css">
 </head>
 <body>  
-    <p>Teste de Evento Submit</p>
+    <p>Teste de Detectação de Foco</p>
     <div class="form">
-        <form action="form01" onsubmit="envio()">
-            <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+        <form action="form01">
+            <input type="text" name="nome" id="nome" placeholder="Nome" onfocus="focos()"><br><!--Definir foco manualmente-->
             <input type="text" name="morada" id="morada" placeholder="Morada">
             <input type="email" name="email" id="email" placeholder="Email">
             <input type="submit" value="Enviar" id="enviar">
@@ -18,8 +18,8 @@
     </div>
 </body>
 <script>
-    function envio() {
-        alert('Informação Enviada com Sucesso!')
+    function focos() {
+        alert('O campo nome ganhou o foco!')
     }
 </script>
 </html>

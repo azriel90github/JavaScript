@@ -13,12 +13,13 @@ body {
 }
 
 p {
+    font-size: 25px;
     text-align: center;
     padding-top: 30px;
 }
 
 .form {
-    width: 300px;
+    width: 500px;
     margin: auto;
 }
 
@@ -32,8 +33,9 @@ form {
 }
 
 input {
+    background-color: rgba(255, 255, 255, 0.671);
     border: none;
-    width: 250px;
+    width: 450px;
     padding: 9px;
     border-radius: 8px;
 }
