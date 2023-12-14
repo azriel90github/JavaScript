@@ -29,12 +29,12 @@ let num = [5, 8, 2, 9, 3]// Vector num
 num.push(1) // Definir como primeiro Número
 num.sort() // Definir em Ordem crescente
 
-console.log(num)// Mostrar na 
+console.log(num)// Mostrar na tela
 console.log(`O vector tem ${num.length} posições`)// Mostrar na tela o número de posicões na tela
 console.log(`O primeiro valor do vector é ${num[0]}`)//Buscar o valor na posição 0
 
 let pos = num.indexOf(4)// Achar posição do Valor 4 no Vector
-
+ 
 if (pos == -1) { // Se o valor da variavel pos for igual a -1, mostrar na tela
     console.log(`O valor não foi encontrado!`)
 } else {
