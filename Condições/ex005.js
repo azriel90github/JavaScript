@@ -1,21 +1,8 @@
+
 var data = new Date()
 var diaSem = data.getDay()
 
-var diaSem = 5
-
-/*
-
-0 = Domingo
-1 = Segunda
-2 = Terça
-3 = Quarta
-4 = Quinta
-5 = Sexta
-6 = Sabado
-
-*/
-
-//console.log(diaSem)
+var diaSem = 6
 
 //expressão switch para a var diaSem
 switch(diaSem) {
@@ -53,3 +40,17 @@ switch(diaSem) {
         console.log('[ERRO] Dia Inválido!')
     break
 } 
+
+/*
+
+0 = Domingo
+1 = Segunda
+2 = Terça
+3 = Quarta
+4 = Quinta
+5 = Sexta
+6 = Sabado
+
+*/
+
+//console.log(diaSem)
