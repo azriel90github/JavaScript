@@ -1,6 +1,6 @@
 
-var data = new Date()
-var diaSem = data.getDay()
+var data = new Date() //Variavel data buscando a data do sitema
+var diaSem = data.getDay() //Variavel diaSem, buscando o dia da variavel data
 
 var diaSem = 6
 
