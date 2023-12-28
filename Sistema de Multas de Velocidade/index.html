@@ -4,41 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Multas - DETRAN</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background-color: rgb(44, 44, 107);
-            color: white;
-            font: normal 14pt arial;
-        }
-        .container {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 90vh;
-        }
-        .input {
-            width: 350px;
-            margin-top: 20px;
-            padding: 8px;
-            border-radius: 8px;
-            border: none;
-        }
-        .botao {
-            width: 150px;
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 8px;
-            border: none;
-            margin-top: 20px;
-        }
-        #resultado {
-            padding-top: 25px;
-        }
-        span {
-            padding-top: 10px;
-        }
+
     </style>
 </head>
 <body>
@@ -52,18 +20,5 @@
         </div>
     </div>
 </body>
-    <script>
-        function calcular() {
-            var valor_velocidade = document.querySelector('input#valor')
-            var resultado = document.querySelector('div#resultado')
-            var valor = Number(valor_velocidade.value)
-            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${valor}Km/h</strong><br></p>`
-            //condição simples
-            if (valor > 60) {
-                resultado.innerHTML += `<p>Você ultrapassou o limite de velocidade. MULTADO!</p>`
-            }
-            resultado.innerHTML += `<p>Diriga sempre usando o cinto de Segurança. Obrigado</p>`
-        }
-        
-    </script>
+    <script src="script.js"></script>
 </html>
