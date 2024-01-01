@@ -31,15 +31,15 @@ function verificar() {
             genero = 'Homem'
 
 
-            if (idade >= 0 && idade >10) {
+            if (idade >= 0 && idade <10) {
                 //criança-------------------------------------
                 img.setAttribute('src', 'img/foto-bebe-homem.jpg')
 
-            } else if (idade < 21) {
+            } else if (idade > 21) {
                 //jovem---------------------------------------
                 img.setAttribute('src', 'img/foto-jovem-homem.jpg')
 
-            } else if (idade < 50) {
+            } else if (idade > 50) {
                 //adulto--------------------------------------
                 img.setAttribute('src', 'img/foto-adulto-homem.jpg')
             } else {
@@ -74,7 +74,9 @@ function verificar() {
 
         img.style.height = '200px'
         img.style.width = '200px'
-        img.style.textAlign = 'center'
+        img.style.borderRadius = '50%'
+
+        res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
         res.appendChild(img)
 
