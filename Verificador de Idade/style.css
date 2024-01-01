@@ -23,6 +23,10 @@ section {
     border-radius: 20px;
 }
 
+#img {
+    border-radius: 50%;
+}
+
 .data {
     margin-top: 15px;
     padding: 8px;

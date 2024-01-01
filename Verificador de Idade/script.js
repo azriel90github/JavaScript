@@ -1,64 +1,84 @@
 //funcao verificar
 function verificar() {
 
-    var data = new Date();
-    var ano = data.getFullYear();
-    var fano = document.getElementById('txtano');
-    var res = document.querySelector('div#res');
+    var data = new Date(); // Buscar data do Sistema
+    var ano = data.getFullYear(); // Buscar o ano completo da variavel data
+
+    var fano = document.getElementById('txtano'); // Chamar o ID da tag input(txtano) 
+    var res = document.querySelector('div#res'); // Chamar o ID (res), querySelector da tag div
     
-    if (fano.value.length == 0 || fano.value > ano) {
+    if (fano.value.length == 0 || Number(fano.value) > ano) {
 
         alert('[ERROR]Verifique os dados e tente novamente!');
 
     } else {
 
-        var fsex = document.getElementsByName('radsex');
-        var idade = ano - Number(fano.value);
-        //res.innerHTML = `Idade Calculada: ${idade}`;
-        var genero =  ''
-        //variavel img
-        var img = document.createElement('img')
-        //tag img com o id foto, dentro do JS
-        img.setAttribute('id', 'foto')
+        var fsex = document.getElementsByName('radsex'); // Buscar o elemento (radsex) da tag input
+        var idade = ano - Number(fano.value); // Variavel idade calculando o ano atual menos o valor do ano de nascimento
 
-        if (fsex[0].checked) {
+
+        //res.innerHTML = `Idade Calculada: ${idade}`;
+        
+        var genero =  ''
+        
+        //variavel img
+        var img = document.createElement('img') // Criar elemento img
+        img.setAttribute('id', 'foto') // Tag img com o id foto, dentro do JS
+
+
+        if (fsex[0].checked) { // Se selecionar o fsex 0, como checado é Homem
+
             genero = 'Homem'
+
+
             if (idade >= 0 && idade >10) {
-                //criança
-                img.setAttribute('src', 'foto-bebe-homem.jpg')
+                //criança-------------------------------------
+                img.setAttribute('src', 'img/foto-bebe-homem.jpg')
 
             } else if (idade < 21) {
-                //jovem
-                img.setAttribute('src', 'foto-jovem-homem.jpg')
+                //jovem---------------------------------------
+                img.setAttribute('src', 'img/foto-jovem-homem.jpg')
 
             } else if (idade < 50) {
-                //adulto
-                img.setAttribute('src', 'foto-adulto-homem.jpg')
+                //adulto--------------------------------------
+                img.setAttribute('src', 'img/foto-adulto-homem.jpg')
             } else {
-                //idoso
-                img.setAttribute('src', 'foto-idoso-homem.jpg')
+                //idoso---------------------------------------
+                img.setAttribute('src', 'img/foto-idoso-homem.jpg')
             }
 
-        } else if (fsex[1].checked) {
+
+
+        } else if (fsex[1].checked) { // Se selecionar o fsex 1, como checado é Mulher
+
             genero = 'Mulher'
+
+
             if (idade >= 0 && idade >10) {
-                //criança
-                img.setAttribute('src', 'foto-bebe-mulher')
+                //criança----------------------------------
+                img.setAttribute('src', 'img/foto-bebe-mulher')
 
             } else if (idade < 21) {
-                //jovem
-                img.setAttribute('src', 'foto-jovem-mulher')
+                //jovem------------------------------------
+                img.setAttribute('src', 'img/foto-jovem-mulher')
 
             } else if (idade < 50) {
-                //adulto    
-                img.setAttribute('src', 'foto')
+                //adulto ----------------------------------   
+                img.setAttribute('src', 'img/foto-senhora-mulher')
 
             } else {
-                //idoso
-                img.setAttribute('src', 'caminho da foto')
+                //idoso------------------------------------
+                img.setAttribute('src', 'img/foto-idosa-mulher')
             }
         }
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+
+        img.style.height = '200px'
+        img.style.width = '200px'
+        img.style.textAlign = 'center'
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.appendChild(img)
+
     }
+    
 
 }
