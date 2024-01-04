@@ -14,7 +14,7 @@ function tabuada() {
     else { // Se não
 
         let n = Number(num.value) // Variavel n recebe Valor do número
-        let c = 1 // Variavel c recebe valor 1l
+        let c = 1 // Variavel c recebe valor 11
 
         tab.innerHTML = ''
 
@@ -22,8 +22,8 @@ function tabuada() {
 
             let item = document.createElement('option') // Variavel item, criando o elemento option
             item.text = `${n} x ${c} = ${n*c}` // Item recebe o texto...
-            item.value = `tab${c}` // Valor do item
-            tab.appendChild(item) // Anexar o item
+            item.value = `tab${c}` // Valor do item...
+            tab.appendChild(item) // Anexar o item...
 
             c++ // Incrementar
 
