@@ -1,0 +1,15 @@
+// Function to compute the product of p1 and p2
+
+let resultado = myFunction(3, 4)
+
+function myFunction(p1, p2) {
+
+    return p1 * p2
+    
+}
+~
+
+console.log(resultado)
+
+
+

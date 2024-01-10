@@ -68,7 +68,7 @@ const date = new Date("2022-03-25");
 
 const person = {
     
-    firstName:"John", 
+    firstName:"John",
     lastName:"Doe", 
     age:50, 
     eyeColor:"blue"
