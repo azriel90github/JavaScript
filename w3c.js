@@ -58,7 +58,15 @@ let y = false;
 const person = {firstName:"John", lastName:"Doe"};
 */
 // Array object - Matriz:
-const cars = ["Saab", "Volvo", "BMW"];
+
+const cars = [
+
+    "Saab", 
+    "Volvo", 
+    "BMW"
+
+];
+
 console.log(cars[1])
 
 // Date object:
