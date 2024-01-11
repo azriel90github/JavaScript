@@ -83,3 +83,4 @@ const person = {
 };
 
 console.log(person.age)
+

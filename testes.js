@@ -34,9 +34,42 @@ function toCelsius(fahrenheit) {
 }
 
 let value = toCelsius(77);
-console.log(value)
+//console.log(value)
 
 
+
+const car = {type:"Fiat", model:"500", color:"white"};
+
+//console.log(car.color)
+
+const pessoa = {
+
+  firstName:"John", 
+  lastName:"Doe", 
+  age:50, 
+  eyeColor:"blue"
+
+};
+
+//console.log(pessoa.lastName)
+
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+
+  fullName : function() {
+    return this.firstName + " " + this.lastName + " " + this.id;
+  }
+};
+
+
+//let nome = person.fullName
+console.log(person.fullName())
+
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length; // Buscar o comprimento
 
 
 
