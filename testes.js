@@ -57,9 +57,13 @@ const person = {
   firstName: "John",
   lastName : "Doe",
   id       : 5566,
+  morada: "Angola",
+  namorada: "Madalena",
+  
+
 
   fullName : function() {
-    return this.firstName + " " + this.lastName + " " + this.id;
+    return this.firstName + " " + this.lastName + " " + this.id + " " + this.morada;
   }
 };
 
@@ -70,6 +74,9 @@ console.log(person.fullName())
 
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length; // Buscar o comprimento
+
+
+console.log(length)
 
 
 
