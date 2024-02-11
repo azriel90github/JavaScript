@@ -38,7 +38,7 @@ let value = toCelsius(77);
 
 
 
-const car = {type:"Fiat", model:"500", color:"white"};
+//const car = {type:"Fiat", model:"500", color:"white"};
 
 //console.log(car.color)
 
@@ -53,7 +53,9 @@ const pessoa = {
 
 //console.log(pessoa.lastName)
 
+// Estudando Objecto
 const person = {
+
   firstName: "John",
   lastName : "Doe",
   id       : 5566,
@@ -69,14 +71,23 @@ const person = {
 
 
 //let nome = person.fullName
-console.log(person.fullName())
+//console.log(person.fullName())
 
 
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length; // Buscar o comprimento
 
 
-console.log(length)
+//console.log(length)
+
+//Estudando Matriz ou Array
+
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+
+console.log(car)
+
+
 
 
 
